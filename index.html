@@ -1,811 +1,1081 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>西北民族大学第五届卓越新闻班招新</title>
-    <link rel="stylesheet" href="https://cdn.staticfile.org/tailwindcss/2.2.19/tailwind.min.css">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>西北民族大学第五届卓越新闻学实验班招生</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.org/tailwindcss/2.2.19/tailwind.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+    />
     <script src="https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js"></script>
     <style>
-        :root {
-            --primary-color: #8E2DE2;
-            --secondary-color: #4A00E0;
-            --accent-color: #FF6B6B;
-            --text-color: #333;
-            --bg-color: #fff;
-            --card-bg: #f8f9fa;
-            --border-color: #e9ecef;
-            --quote-bg: #f3f4f6;
-        }
+      :root {
+        --primary-color: #8e2de2;
+        --secondary-color: #4a00e0;
+        --accent-color: #ff6b6b;
+        --text-color: #333;
+        --bg-color: #fff;
+        --card-bg: #f8f9fa;
+        --border-color: #e9ecef;
+        --quote-bg: #f3f4f6;
+      }
 
-        .dark {
-            --primary-color: #9D50BB;
-            --secondary-color: #6E48AA;
-            --accent-color: #FF8E8E;
-            --text-color: #e2e8f0;
-            --bg-color: #1a202c;
-            --card-bg: #2d3748;
-            --border-color: #4a5568;
-            --quote-bg: #2d3748;
-        }
+      .dark {
+        --primary-color: #9d50bb;
+        --secondary-color: #6e48aa;
+        --accent-color: #ff8e8e;
+        --text-color: #e2e8f0;
+        --bg-color: #1a202c;
+        --card-bg: #2d3748;
+        --border-color: #4a5568;
+        --quote-bg: #2d3748;
+      }
 
-        body {
-            font-family: 'Noto Sans SC', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-serif;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            transition: background-color 0.3s, color 0.3s;
-        }
+      body {
+        font-family: "Noto Sans SC", Tahoma, Arial, Roboto, "Droid Sans",
+          "Helvetica Neue", "Droid Sans Fallback", "Heiti SC",
+          "Hiragino Sans GB", Simsun, sans-serif;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+        transition: background-color 0.3s, color 0.3s;
+      }
 
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Noto Serif SC', serif;
-        }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Noto Serif SC", serif;
+      }
 
-        .hero-section {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-        }
+      .hero-section {
+        background: linear-gradient(
+          135deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        color: white;
+      }
 
-        .card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+      .card {
+        background-color: var(--card-bg);
+        border: 1px solid var(--border-color);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
 
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
 
-        .quote {
-            background-color: var(--quote-bg);
-            border-left: 4px solid var(--accent-color);
-        }
+      .quote {
+        background-color: var(--quote-bg);
+        border-left: 4px solid var(--accent-color);
+      }
 
-        .carousel {
-            position: relative;
-            overflow: hidden;
-            border-radius: 0.5rem;
-        }
+      .carousel {
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.5rem;
+      }
 
-        .carousel-inner {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
+      .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
 
+      .carousel-item {
+        min-width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .carousel-control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 10;
+      }
+
+      .carousel-control.prev {
+        left: 10px;
+      }
+
+      .carousel-control.next {
+        right: 10px;
+      }
+
+      .carousel-indicators {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+      }
+
+      .carousel-indicator {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+      }
+
+      .carousel-indicator.active {
+        background-color: white;
+      }
+
+      .faq-item {
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .faq-question {
+        cursor: pointer;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .faq-answer {
+        padding: 0 1rem 1rem;
+        display: none;
+      }
+
+      .faq-answer.active {
+        display: block;
+      }
+
+      .comment-form textarea {
+        background-color: var(--card-bg);
+        border: 1px solid var(--border-color);
+        color: var(--text-color);
+      }
+
+      .comment-item {
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .senior-card {
+        background-color: var(--card-bg);
+        border-radius: 0.5rem;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .senior-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .senior-quote {
+        position: relative;
+        padding: 1.5rem;
+      }
+
+      .senior-quote::before {
+        content: "\201C";
+        font-size: 4rem;
+        font-family: Georgia, serif;
+        color: var(--accent-color);
+        opacity: 0.3;
+        position: absolute;
+        top: -1rem;
+        left: 0.5rem;
+      }
+
+      .btn-primary {
+        background: linear-gradient(
+          135deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        color: white;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .theme-toggle {
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        transition: background-color 0.3s;
+      }
+
+      .theme-toggle:hover {
+        background-color: var(--border-color);
+      }
+
+      .first-letter::first-letter {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--accent-color);
+        float: left;
+        line-height: 1;
+        margin-right: 0.2rem;
+      }
+
+      /* 动画效果 */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fade-in {
+        animation: fadeIn 0.8s ease forwards;
+      }
+
+      .delay-100 {
+        animation-delay: 0.1s;
+      }
+      .delay-200 {
+        animation-delay: 0.2s;
+      }
+      .delay-300 {
+        animation-delay: 0.3s;
+      }
+      .delay-400 {
+        animation-delay: 0.4s;
+      }
+      .delay-500 {
+        animation-delay: 0.5s;
+      }
+
+      /* 微信二维码弹窗样式 */
+      .wechat-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .wechat-modal-content {
+        background-color: var(--bg-color);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 300px;
+        width: 90%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .wechat-modal-content img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
+      }
+
+      /* 响应式调整 */
+      @media (max-width: 768px) {
         .carousel-item {
-            min-width: 100%;
-            height: 400px;
-            background-size: cover;
-            background-position: center;
+          height: 250px;
         }
-
-        .carousel-control {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            z-index: 10;
-        }
-
-        .carousel-control.prev {
-            left: 10px;
-        }
-
-        .carousel-control.next {
-            right: 10px;
-        }
-
-        .carousel-indicators {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 8px;
-        }
-
-        .carousel-indicator {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.5);
-            cursor: pointer;
-        }
-
-        .carousel-indicator.active {
-            background-color: white;
-        }
-
-        .faq-item {
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .faq-question {
-            cursor: pointer;
-            padding: 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .faq-answer {
-            padding: 0 1rem 1rem;
-            display: none;
-        }
-
-        .faq-answer.active {
-            display: block;
-        }
-
-        .comment-form textarea {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            color: var(--text-color);
-        }
-
-        .comment-item {
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .senior-card {
-            background-color: var(--card-bg);
-            border-radius: 0.5rem;
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .senior-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .senior-quote {
-            position: relative;
-            padding: 1.5rem;
-        }
-
-        .senior-quote::before {
-            content: '\201C';
-            font-size: 4rem;
-            font-family: Georgia, serif;
-            color: var(--accent-color);
-            opacity: 0.3;
-            position: absolute;
-            top: -1rem;
-            left: 0.5rem;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .theme-toggle {
-            cursor: pointer;
-            padding: 0.5rem;
-            border-radius: 0.5rem;
-            transition: background-color 0.3s;
-        }
-
-        .theme-toggle:hover {
-            background-color: var(--border-color);
-        }
-
-        .first-letter::first-letter {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: var(--accent-color);
-            float: left;
-            line-height: 1;
-            margin-right: 0.2rem;
-        }
-
-        /* 动画效果 */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .animate-fade-in {
-            animation: fadeIn 0.8s ease forwards;
-        }
-
-        .delay-100 { animation-delay: 0.1s; }
-        .delay-200 { animation-delay: 0.2s; }
-        .delay-300 { animation-delay: 0.3s; }
-        .delay-400 { animation-delay: 0.4s; }
-        .delay-500 { animation-delay: 0.5s; }
-
-        /* 微信二维码弹窗样式 */
-        .wechat-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .wechat-modal-content {
-            background-color: var(--bg-color);
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            max-width: 300px;
-            width: 90%;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .wechat-modal-content img {
-            max-width: 100%;
-            height: auto;
-            margin: 10px 0;
-        }
-
-        /* 响应式调整 */
-        @media (max-width: 768px) {
-            .carousel-item {
-                height: 250px;
-            }
-        }
+      }
     </style>
-</head>
-<body class="min-h-screen">
+  </head>
+  <body class="min-h-screen">
     <!-- 导航栏 -->
-    <nav class="sticky top-0 z-50 bg-opacity-90 backdrop-filter backdrop-blur-lg" style="background-color: var(--bg-color);">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <i class="fas fa-newspaper text-2xl" style="color: var(--primary-color);"></i>
-                <h1 class="text-xl font-bold">西北民族大学卓越新闻班</h1>
-            </div>
-            <div class="flex items-center space-x-6">
-                <a href="#intro" class="hidden md:block hover:text-opacity-70" style="color: var(--text-color);">卓越班简介</a>
-                <a href="#faq" class="hidden md:block hover:text-opacity-70" style="color: var(--text-color);">问题咨询</a>
-                <a href="#seniors" class="hidden md:block hover:text-opacity-70" style="color: var(--text-color);">学长学姐说</a>
-                <div class="theme-toggle" id="themeToggle">
-                    <i class="fas fa-sun dark:hidden" style="color: var(--text-color);"></i>
-                    <i class="fas fa-moon hidden dark:block" style="color: var(--text-color);"></i>
-                </div>
-            </div>
+    <nav
+      class="sticky top-0 z-50 bg-opacity-90 backdrop-filter backdrop-blur-lg"
+      style="background-color: var(--bg-color)"
+    >
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <div class="flex items-center space-x-2">
+          <i
+            class="fas fa-newspaper text-2xl"
+            style="color: var(--primary-color)"
+          ></i>
+          <h1 class="text-xl font-bold">西北民族大学卓越新闻班</h1>
         </div>
+        <div class="flex items-center space-x-6">
+          <a
+            href="#intro"
+            class="hidden md:block hover:text-opacity-70"
+            style="color: var(--text-color)"
+            >卓越班简介</a
+          >
+          <a
+            href="#faq"
+            class="hidden md:block hover:text-opacity-70"
+            style="color: var(--text-color)"
+            >问题咨询</a
+          >
+          <a
+            href="#seniors"
+            class="hidden md:block hover:text-opacity-70"
+            style="color: var(--text-color)"
+            >学长学姐说</a
+          >
+          <div class="theme-toggle" id="themeToggle">
+            <i
+              class="fas fa-sun dark:hidden"
+              style="color: var(--text-color)"
+            ></i>
+            <i
+              class="fas fa-moon hidden dark:block"
+              style="color: var(--text-color)"
+            ></i>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero 部分 -->
     <section class="hero-section py-16 md:py-24">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-3xl md:text-5xl font-bold mb-6 animate-fade-in">第五届卓越新闻班招新</h1>
-            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto animate-fade-in delay-100">培养德智体美劳全面，具有坚定政治方向、复合型知识结构、全面专业技能的新闻传播人才</p>
-            <a href="#apply" class="btn-primary inline-block px-8 py-3 rounded-full text-lg font-medium animate-fade-in delay-200">立即报名</a>
-        </div>
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-3xl md:text-5xl font-bold mb-6 animate-fade-in">
+          第五届卓越新闻班招新
+        </h1>
+        <p
+          class="text-lg md:text-xl mb-8 max-w-3xl mx-auto animate-fade-in delay-100"
+        >
+          培养德智体美劳全面，具有坚定政治方向、复合型知识结构、全面专业技能的新闻传播人才
+        </p>
+        <a
+          href="#apply"
+          class="btn-primary inline-block px-8 py-3 rounded-full text-lg font-medium animate-fade-in delay-200"
+          >立即报名</a
+        >
+      </div>
     </section>
 
     <!-- 卓越班简介 -->
     <section id="intro" class="py-16 md:py-24">
-        <div class="container mx-auto px-4">
-            <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center" style="color: var(--primary-color);">卓越班简介</h2>
-            
-            <!-- 轮播图 -->
-            <div class="carousel mb-12 max-w-4xl mx-auto animate-fade-in">
-                <div class="carousel-inner">
-                    <div class="carousel-item" style="background-image: url('首轮2.jpg');"></div>
-                    <div class="carousel-item" style="background-image: url('首轮3.png');"></div>
-                    <div class="carousel-item" style="background-image: url('首轮4.jpg');"></div>
-                    <div class="carousel-item" style="background-image: url('首轮5.jpg');"></div>
-                    <div class="carousel-item" style="background-image: url('首轮6.jpg');"></div>
-                </div>
-                <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
-                <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
-                <div class="carousel-indicators"></div>
-            </div>
-            
-            <!-- 卓越班风采说明 -->
-            <div class="text-center mb-8 max-w-4xl mx-auto">
-                <h3 class="text-xl font-semibold mb-2" style="color: var(--accent-color);">卓越班风采</h3>
-            </div>
-            
-            <!-- 文字介绍 -->
-            <div class="max-w-4xl mx-auto space-y-6 animate-fade-in delay-200">
-                <p class="first-letter text-lg leading-relaxed" style="color: var(--text-color);">
-                    为响应《教育部中共中央宣传部关于提高高校新闻传播人才培养能力 实施卓越新闻传播人才教育培养计划2.0 的意见》《新文科建设宣言》《西北民族大学加快建设一流本科教育行动计划（2018—2022）》等文件的精神要求，新闻传播学院自2021年开设卓越新闻学实验班。
-                </p>
-                <p class="text-lg leading-relaxed" style="color: var(--text-color);">
-                    卓越新闻学实验班依托国家级一流本科专业新闻学专业，拥有稳定合理的师资队伍，特色鲜明的实践教学体系，全面深入的协同育人机制以及先进齐全的教学设施，能够为每一位同学提供高质量的教学平台、创新的实践教学活动以及丰富的实习实训资源。
-                </p>
-                <p class="text-lg leading-relaxed" style="color: var(--text-color);">
-                    卓越新闻实验班旨在培养德智体美劳全面，具有坚定的政治方向、复合型的知识结构、全面的专业技能和优秀的发展潜质跨学科全媒化复合型新闻传播人才。毕业生适合在通讯社、报社、杂志社网站及新闻传媒集团中担任新闻记者、新闻编辑，或者在党政机关，企事业单位从事新闻传播管理方面的相关工作。
-                </p>
-                <p class="text-lg font-medium" style="color: var(--accent-color);">
-                    近日将开始第五届卓越新闻班的招生选拔。
-                </p>
-            </div>
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-2xl md:text-3xl font-bold mb-12 text-center"
+          style="color: var(--primary-color)"
+        >
+          卓越班简介
+        </h2>
+
+        <!-- 轮播图 -->
+        <div class="carousel mb-12 max-w-4xl mx-auto animate-fade-in">
+          <div class="carousel-inner">
+            <div
+              class="carousel-item"
+              style="background-image: url('首轮2.jpg')"
+            ></div>
+            <div
+              class="carousel-item"
+              style="background-image: url('首轮3.png')"
+            ></div>
+            <div
+              class="carousel-item"
+              style="background-image: url('首轮4.jpg')"
+            ></div>
+            <div
+              class="carousel-item"
+              style="background-image: url('首轮5.jpg')"
+            ></div>
+            <div
+              class="carousel-item"
+              style="background-image: url('首轮6.jpg')"
+            ></div>
+          </div>
+          <button class="carousel-control prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carousel-control next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <div class="carousel-indicators"></div>
         </div>
+
+        <!-- 卓越班风采说明 -->
+        <div class="text-center mb-8 max-w-4xl mx-auto">
+          <h3
+            class="text-xl font-semibold mb-2"
+            style="color: var(--accent-color)"
+          >
+            卓越班风采
+          </h3>
+        </div>
+
+        <!-- 文字介绍 -->
+        <div class="max-w-4xl mx-auto space-y-6 animate-fade-in delay-200">
+          <p
+            class="first-letter text-lg leading-relaxed"
+            style="color: var(--text-color)"
+          >
+            为响应《教育部中共中央宣传部关于提高高校新闻传播人才培养能力
+            实施卓越新闻传播人才教育培养计划2.0
+            的意见》《新文科建设宣言》《西北民族大学加快建设一流本科教育行动计划（2018—2022）》等文件的精神要求，新闻传播学院自2021年开设卓越新闻学实验班。
+          </p>
+          <p class="text-lg leading-relaxed" style="color: var(--text-color)">
+            卓越新闻学实验班依托国家级一流本科专业新闻学专业，拥有稳定合理的师资队伍，特色鲜明的实践教学体系，全面深入的协同育人机制以及先进齐全的教学设施，能够为每一位同学提供高质量的教学平台、创新的实践教学活动以及丰富的实习实训资源。
+          </p>
+          <p class="text-lg leading-relaxed" style="color: var(--text-color)">
+            卓越新闻实验班旨在培养德智体美劳全面，具有坚定的政治方向、复合型的知识结构、全面的专业技能和优秀的发展潜质跨学科全媒化复合型新闻传播人才。毕业生适合在通讯社、报社、杂志社网站及新闻传媒集团中担任新闻记者、新闻编辑，或者在党政机关，企事业单位从事新闻传播管理方面的相关工作。
+          </p>
+          <p class="text-lg font-medium" style="color: var(--accent-color)">
+            近日将开始第五届卓越新闻班的招生选拔。
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- 问题咨询 -->
-    <section id="faq" class="py-16 md:py-24" style="background-color: var(--card-bg);">
-        <div class="container mx-auto px-4">
-            <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center" style="color: var(--primary-color);">问题咨询</h2>
-            
-            <!-- 常见问题 -->
-            <div class="max-w-3xl mx-auto mb-16">
-                <h3 class="text-xl font-semibold mb-6" style="color: var(--accent-color);">常见问题</h3>
-                
-                <div class="space-y-4">
-                    <!-- FAQ 1 -->
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h4 class="font-medium">卓越新闻班的选拔条件是什么？</h4>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>卓越新闻班面向全校招生，不限专业背景。我们主要考察学生的综合素质、学习能力和对新闻传播事业的热情。具体选拔流程包括书面申请、面试和实践能力测试等环节。</p>
-                        </div>
-                    </div>
-                    
-                    <!-- FAQ 2 -->
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h4 class="font-medium">卓越新闻班与普通新闻专业有什么区别？</h4>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>卓越新闻班是在普通新闻专业基础上的强化培养项目，具有以下特点：</p>
-                            <ul class="list-disc pl-5 mt-2 space-y-1">
-                                <li>小班化教学，师生互动更加密切</li>
-                                <li>定制化课程体系，理论与实践并重</li>
-                                <li>更多行业资源对接，包括媒体实习、行业导师等</li>
-                                <li>更多创新创业支持和国际交流机会</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- FAQ 3 -->
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h4 class="font-medium">转入卓越新闻班后，原专业课程如何处理？</h4>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>被卓越新闻班录取的学生将转入新闻学专业，学籍随之变更。原专业已修课程将根据教学计划进行学分认定，符合要求的课程可以转换为新专业的学分。具体转换方案将由教务处和学院共同制定。</p>
-                        </div>
-                    </div>
-                    
-                    <!-- FAQ 4 -->
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h4 class="font-medium">卓越新闻班的就业前景如何？</h4>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>卓越新闻班毕业生就业方向广泛，主要包括：</p>
-                            <ul class="list-disc pl-5 mt-2 space-y-1">
-                                <li>各类媒体机构（报社、电视台、新媒体等）的记者、编辑、制作人等</li>
-                                <li>政府部门、企事业单位的新闻宣传、公共关系、品牌传播等岗位</li>
-                                <li>文化创意产业、广告公司、传媒科技企业等</li>
-                                <li>继续深造（国内外研究生）</li>
-                            </ul>
-                            <p class="mt-2">历届毕业生就业率和就业质量均处于学校前列。</p>
-                        </div>
-                    </div>
-                </div>
+    <section
+      id="faq"
+      class="py-16 md:py-24"
+      style="background-color: var(--card-bg)"
+    >
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-2xl md:text-3xl font-bold mb-12 text-center"
+          style="color: var(--primary-color)"
+        >
+          问题咨询
+        </h2>
+
+        <!-- 常见问题 -->
+        <div class="max-w-3xl mx-auto mb-16">
+          <h3
+            class="text-xl font-semibold mb-6"
+            style="color: var(--accent-color)"
+          >
+            常见问题
+          </h3>
+
+          <div class="space-y-4">
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+              <div class="faq-question">
+                <h4 class="font-medium">卓越新闻班的选拔条件是什么？</h4>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  卓越新闻班面向全校招生，不限专业背景。我们主要考察学生的综合素质、学习能力和对新闻传播事业的热情。具体选拔流程包括书面申请、面试和实践能力测试等环节。
+                </p>
+              </div>
             </div>
-            
-            <!-- 问题留言 -->
-            <div class="max-w-3xl mx-auto">
-                <h3 class="text-xl font-semibold mb-6" style="color: var(--accent-color);">问题留言</h3>
-                
-                <!-- 留言表单 -->
-                <div class="comment-form mb-8">
-                    <textarea rows="4" class="w-full p-3 rounded-lg focus:outline-none focus:ring-2" style="background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);" placeholder="有什么问题想咨询？请在这里留言..."></textarea>
-                    <div class="flex justify-between items-center mt-3">
-                        <input type="text" class="p-2 rounded-lg focus:outline-none focus:ring-2" style="background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);" placeholder="您的昵称（选填）">
-                        <button class="btn-primary px-6 py-2 rounded-lg">提交问题</button>
-                    </div>
-                </div>
-                
-                <!-- 留言列表标题（添加折叠功能） -->
-                <div class="comments-header faq-question mb-4 p-3 rounded-lg" style="background-color: var(--card-bg); border: 1px solid var(--border-color);">
-                    <div class="flex justify-between items-center">
-                        <h4 class="font-medium">查看留言</h4>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                </div>
-                
-                <!-- 示例留言（添加 faq-answer 类以支持折叠） -->
-                <div class="space-y-6 comments-container faq-answer">
-                    <div class="comment-item pb-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <div class="font-medium">匿名用户</div>
-                            <div class="text-sm text-gray-500">2023-10-15</div>
-                        </div>
-                        <p>请问卓越新闻班的课程设置有哪些特色？</p>
-                        
-                        <!-- 回复按钮 -->
-                        <div class="mt-3">
-                            <button class="reply-btn text-sm px-3 py-1 rounded-lg" style="color: var(--primary-color);">回复</button>
-                            <div class="reply-form hidden mt-2">
-                                <textarea rows="2" class="w-full p-2 text-sm rounded-lg focus:outline-none focus:ring-2" style="background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);" placeholder="回复这条留言..."></textarea>
-                                <div class="flex justify-between items-center mt-2">
-                                    <input type="text" class="p-1 text-sm rounded-lg focus:outline-none focus:ring-2" style="background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);" placeholder="您的昵称（选填）">
-                                    <button class="btn-primary px-4 py-1 text-sm rounded-lg">提交回复</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="comment-item pb-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <div class="font-medium">匿名用户</div>
-                            <div class="text-sm text-gray-500">2023-10-14</div>
-                        </div>
-                        <p>我是理工科专业的学生，可以报考卓越新闻班吗？</p>
-                        
-                        <!-- 回复按钮 -->
-                        <div class="mt-3">
-                            <button class="reply-btn text-sm px-3 py-1 rounded-lg" style="color: var(--primary-color);">回复</button>
-                            <div class="reply-form hidden mt-2">
-                                <textarea rows="2" class="w-full p-2 text-sm rounded-lg focus:outline-none focus:ring-2" style="background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);" placeholder="回复这条留言..."></textarea>
-                                <div class="flex justify-between items-center mt-2">
-                                    <input type="text" class="p-1 text-sm rounded-lg focus:outline-none focus:ring-2" style="background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);" placeholder="您的昵称（选填）">
-                                    <button class="btn-primary px-4 py-1 text-sm rounded-lg">提交回复</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+              <div class="faq-question">
+                <h4 class="font-medium">
+                  卓越新闻班与普通新闻专业有什么区别？
+                </h4>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  卓越新闻班是在普通新闻专业基础上的强化培养项目，具有以下特点：
+                </p>
+                <ul class="list-disc pl-5 mt-2 space-y-1">
+                  <li>小班化教学，师生互动更加密切</li>
+                  <li>定制化课程体系，理论与实践并重</li>
+                  <li>更多行业资源对接，包括媒体实习、行业导师等</li>
+                  <li>更多创新创业支持和国际交流机会</li>
+                </ul>
+              </div>
             </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+              <div class="faq-question">
+                <h4 class="font-medium">
+                  转入卓越新闻班后，原专业课程如何处理？
+                </h4>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  被卓越新闻班录取的学生将转入新闻学专业，学籍随之变更。原专业已修课程将根据教学计划进行学分认定，符合要求的课程可以转换为新专业的学分。具体转换方案将由教务处和学院共同制定。
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+              <div class="faq-question">
+                <h4 class="font-medium">卓越新闻班的就业前景如何？</h4>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>卓越新闻班毕业生就业方向广泛，主要包括：</p>
+                <ul class="list-disc pl-5 mt-2 space-y-1">
+                  <li>
+                    各类媒体机构（报社、电视台、新媒体等）的记者、编辑、制作人等
+                  </li>
+                  <li>
+                    政府部门、企事业单位的新闻宣传、公共关系、品牌传播等岗位
+                  </li>
+                  <li>文化创意产业、广告公司、传媒科技企业等</li>
+                  <li>继续深造（国内外研究生）</li>
+                </ul>
+                <p class="mt-2">历届毕业生就业率和就业质量均处于学校前列。</p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- 问题留言 -->
+        <div class="max-w-3xl mx-auto">
+          <h3
+            class="text-xl font-semibold mb-6"
+            style="color: var(--accent-color)"
+          >
+            问题留言
+          </h3>
+
+          <!-- 留言表单 -->
+          <div class="comment-form mb-8">
+            <textarea
+              rows="4"
+              class="w-full p-3 rounded-lg focus:outline-none focus:ring-2"
+              style="
+                background-color: var(--card-bg);
+                border: 1px solid var(--border-color);
+                color: var(--text-color);
+              "
+              placeholder="有什么问题想咨询？请在这里留言..."
+            ></textarea>
+            <div class="flex justify-between items-center mt-3">
+              <input
+                type="text"
+                class="p-2 rounded-lg focus:outline-none focus:ring-2"
+                style="
+                  background-color: var(--card-bg);
+                  border: 1px solid var(--border-color);
+                  color: var(--text-color);
+                "
+                placeholder="您的昵称（选填）"
+              />
+              <button class="btn-primary px-6 py-2 rounded-lg">提交问题</button>
+            </div>
+          </div>
+
+          <!-- 留言列表标题（添加折叠功能） -->
+          <div
+            class="comments-header faq-question mb-4 p-3 rounded-lg"
+            style="
+              background-color: var(--card-bg);
+              border: 1px solid var(--border-color);
+            "
+          >
+            <div class="flex justify-between items-center">
+              <h4 class="font-medium">查看留言</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+
+          <!-- 示例留言（添加 faq-answer 类以支持折叠） -->
+          <div class="space-y-6 comments-container faq-answer">
+            <div class="comment-item pb-4">
+              <div class="flex justify-between items-start mb-2">
+                <div class="font-medium">匿名用户</div>
+                <div class="text-sm text-gray-500">2023-10-15</div>
+              </div>
+              <p>请问卓越新闻班的课程设置有哪些特色？</p>
+
+              <!-- 回复按钮 -->
+              <div class="mt-3">
+                <button
+                  class="reply-btn text-sm px-3 py-1 rounded-lg"
+                  style="color: var(--primary-color)"
+                >
+                  回复
+                </button>
+                <div class="reply-form hidden mt-2">
+                  <textarea
+                    rows="2"
+                    class="w-full p-2 text-sm rounded-lg focus:outline-none focus:ring-2"
+                    style="
+                      background-color: var(--card-bg);
+                      border: 1px solid var(--border-color);
+                      color: var(--text-color);
+                    "
+                    placeholder="回复这条留言..."
+                  ></textarea>
+                  <div class="flex justify-between items-center mt-2">
+                    <input
+                      type="text"
+                      class="p-1 text-sm rounded-lg focus:outline-none focus:ring-2"
+                      style="
+                        background-color: var(--card-bg);
+                        border: 1px solid var(--border-color);
+                        color: var(--text-color);
+                      "
+                      placeholder="您的昵称（选填）"
+                    />
+                    <button class="btn-primary px-4 py-1 text-sm rounded-lg">
+                      提交回复
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="comment-item pb-4">
+              <div class="flex justify-between items-start mb-2">
+                <div class="font-medium">匿名用户</div>
+                <div class="text-sm text-gray-500">2023-10-14</div>
+              </div>
+              <p>我是理工科专业的学生，可以报考卓越新闻班吗？</p>
+
+              <!-- 回复按钮 -->
+              <div class="mt-3">
+                <button
+                  class="reply-btn text-sm px-3 py-1 rounded-lg"
+                  style="color: var(--primary-color)"
+                >
+                  回复
+                </button>
+                <div class="reply-form hidden mt-2">
+                  <textarea
+                    rows="2"
+                    class="w-full p-2 text-sm rounded-lg focus:outline-none focus:ring-2"
+                    style="
+                      background-color: var(--card-bg);
+                      border: 1px solid var(--border-color);
+                      color: var(--text-color);
+                    "
+                    placeholder="回复这条留言..."
+                  ></textarea>
+                  <div class="flex justify-between items-center mt-2">
+                    <input
+                      type="text"
+                      class="p-1 text-sm rounded-lg focus:outline-none focus:ring-2"
+                      style="
+                        background-color: var(--card-bg);
+                        border: 1px solid var(--border-color);
+                        color: var(--text-color);
+                      "
+                      placeholder="您的昵称（选填）"
+                    />
+                    <button class="btn-primary px-4 py-1 text-sm rounded-lg">
+                      提交回复
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- 学长学姐有说什么 -->
     <section id="seniors" class="py-16 md:py-24">
-        <div class="container mx-auto px-4">
-            <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center" style="color: var(--primary-color);">学长学姐有说什么</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- 学长学姐卡片 1 -->
-                <div class="senior-card animate-fade-in">
-                    <div class="senior-quote">
-                        <h3 class="text-xl font-semibold mb-3">牢二次元学长</h3>
-                        <p class="italic">绩点低也不是事，大胆报名，勇敢尝试，你的赞歌是勇气的赞歌，你的伟大是勇气的伟大！</p>
-                        <div class="mt-4">
-                            <button class="like-btn" data-count="0">
-                                <i class="far fa-heart"></i>
-                                <span class="like-count">0</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- 学长学姐卡片 2 -->
-                <div class="senior-card animate-fade-in delay-100">
-                    <div class="senior-quote">
-                        <h3 class="text-xl font-semibold mb-3">凤梨学姐</h3>
-                        <p class="italic">如果你觉得你在原来的专业不开心，找不到自己的价值，那就来吧！勇敢一次，说不定有意意想不到的结果。卓越新闻实验班教会你更多是的思考，能给你更多的松弛感。</p>
-                        <div class="mt-4">
-                            <button class="like-btn" data-count="0">
-                                <i class="far fa-heart"></i>
-                                <span class="like-count">0</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- 学长学姐卡片 3 -->
-                <div class="senior-card animate-fade-in delay-200">
-                    <div class="senior-quote">
-                        <h3 class="text-xl font-semibold mb-3">睡觉第一学姐</h3>
-                        <p class="italic">上联：课少，事少，睡眠多；<br>下联：人善，师善，成绩高；<br>横批：大胆报名</p>
-                        <div class="mt-4">
-                            <button class="like-btn" data-count="0">
-                                <i class="far fa-heart"></i>
-                                <span class="like-count">0</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- 学长学姐卡片 4 -->
-                <div class="senior-card animate-fade-in delay-300">
-                    <div class="senior-quote">
-                        <h3 class="text-xl font-semibold mb-3">儋州学长</h3>
-                        <p class="italic">新时代斜杠青年，有我有你！</p>
-                        <div class="mt-4">
-                            <button class="like-btn" data-count="0">
-                                <i class="far fa-heart"></i>
-                                <span class="like-count">0</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- 学长学姐卡片 5 -->
-                <div class="senior-card animate-fade-in delay-400">
-                    <div class="senior-quote">
-                        <h3 class="text-xl font-semibold mb-3">炎焱燚学姐</h3>
-                        <p class="italic">精品小班课，新闻干货多。实战练本领，我们在等你。</p>
-                        <div class="mt-4">
-                            <button class="like-btn" data-count="0">
-                                <i class="far fa-heart"></i>
-                                <span class="like-count">0</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- 学长学姐卡片 6 -->
-                <div class="senior-card animate-fade-in delay-500">
-                    <div class="senior-quote">
-                        <h3 class="text-xl font-semibold mb-3">丰年好大"雪"姐</h3>
-                        <p class="italic">从零开始的卓越班生活，不想来试一试嘛？</p>
-                        <div class="mt-4">
-                            <button class="like-btn" data-count="0">
-                                <i class="far fa-heart"></i>
-                                <span class="like-count">0</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- 学长学姐卡片 7 (特别长的那个) -->
-                <div class="senior-card md:col-span-2 lg:col-span-3 animate-fade-in">
-                    <div class="senior-quote">
-                        <h3 class="text-xl font-semibold mb-3">睡前不数洋学姐</h3>
-                        <p class="italic leading-relaxed">
-                            我想告诉你们学习新闻的种种——是俯身倾听街头巷尾的市井烟火，是试图理解宏大叙事下个体命运的微光，是用笔尖或镜头传递远方哭声与欢笑的温度，是在喧嚣世界里努力搭建理解桥梁的孤独与热望……<br><br>
-                            但此刻，我更想说的是：转专业之后，虽然很忙碌。但我从未像今天这样，因这份忙碌与充实而感到由衷的幸福与快乐。或许，这就是热爱的力量。<br><br>
-                            我理解你们此刻的犹豫与徘徊，也深深懂得你们的压力与纠结。所以，我不打算给你们任何劝告或建议，只想由衷地祝福你们：愿你们拥有那份勇气——坚持所爱的勇气，不懈追求的勇气，以及适时放手的勇气。<br><br>
-                            别让忧虑消磨了你的决心，也别让质疑淹没了你的胆识。最后希望你们最终能和我们一样，勇敢地成为自己！
-                        </p>
-                        <div class="mt-4">
-                            <button class="like-btn" data-count="0">
-                                <i class="far fa-heart"></i>
-                                <span class="like-count">0</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-2xl md:text-3xl font-bold mb-12 text-center"
+          style="color: var(--primary-color)"
+        >
+          学长学姐有说什么
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- 学长学姐卡片 1 -->
+          <div class="senior-card animate-fade-in">
+            <div class="senior-quote">
+              <h3 class="text-xl font-semibold mb-3">牢二次元学长</h3>
+              <p class="italic">
+                绩点低也不是事，大胆报名，勇敢尝试，你的赞歌是勇气的赞歌，你的伟大是勇气的伟大！
+              </p>
+              <div class="mt-4">
+                <button class="like-btn" data-count="0">
+                  <i class="far fa-heart"></i>
+                  <span class="like-count">0</span>
+                </button>
+              </div>
             </div>
+          </div>
+
+          <!-- 学长学姐卡片 2 -->
+          <div class="senior-card animate-fade-in delay-100">
+            <div class="senior-quote">
+              <h3 class="text-xl font-semibold mb-3">凤梨学姐</h3>
+              <p class="italic">
+                如果你觉得你在原来的专业不开心，找不到自己的价值，那就来吧！勇敢一次，说不定有意意想不到的结果。卓越新闻实验班教会你更多是的思考，能给你更多的松弛感。
+              </p>
+              <div class="mt-4">
+                <button class="like-btn" data-count="0">
+                  <i class="far fa-heart"></i>
+                  <span class="like-count">0</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 学长学姐卡片 3 -->
+          <div class="senior-card animate-fade-in delay-200">
+            <div class="senior-quote">
+              <h3 class="text-xl font-semibold mb-3">睡觉第一学姐</h3>
+              <p class="italic">
+                上联：课少，事少，睡眠多；<br />下联：人善，师善，成绩高；<br />横批：大胆报名
+              </p>
+              <div class="mt-4">
+                <button class="like-btn" data-count="0">
+                  <i class="far fa-heart"></i>
+                  <span class="like-count">0</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 学长学姐卡片 4 -->
+          <div class="senior-card animate-fade-in delay-300">
+            <div class="senior-quote">
+              <h3 class="text-xl font-semibold mb-3">儋州学长</h3>
+              <p class="italic">新时代斜杠青年，有我有你！</p>
+              <div class="mt-4">
+                <button class="like-btn" data-count="0">
+                  <i class="far fa-heart"></i>
+                  <span class="like-count">0</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 学长学姐卡片 5 -->
+          <div class="senior-card animate-fade-in delay-400">
+            <div class="senior-quote">
+              <h3 class="text-xl font-semibold mb-3">炎焱燚学姐</h3>
+              <p class="italic">
+                精品小班课，新闻干货多。实战练本领，我们在等你。
+              </p>
+              <div class="mt-4">
+                <button class="like-btn" data-count="0">
+                  <i class="far fa-heart"></i>
+                  <span class="like-count">0</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 学长学姐卡片 6 -->
+          <div class="senior-card animate-fade-in delay-500">
+            <div class="senior-quote">
+              <h3 class="text-xl font-semibold mb-3">丰年好大"雪"姐</h3>
+              <p class="italic">从零开始的卓越班生活，不想来试一试嘛？</p>
+              <div class="mt-4">
+                <button class="like-btn" data-count="0">
+                  <i class="far fa-heart"></i>
+                  <span class="like-count">0</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 学长学姐卡片 7 (特别长的那个) -->
+          <div class="senior-card md:col-span-2 lg:col-span-3 animate-fade-in">
+            <div class="senior-quote">
+              <h3 class="text-xl font-semibold mb-3">睡前不数洋学姐</h3>
+              <p class="italic leading-relaxed">
+                我想告诉你们学习新闻的种种——是俯身倾听街头巷尾的市井烟火，是试图理解宏大叙事下个体命运的微光，是用笔尖或镜头传递远方哭声与欢笑的温度，是在喧嚣世界里努力搭建理解桥梁的孤独与热望……<br /><br />
+                但此刻，我更想说的是：转专业之后，虽然很忙碌。但我从未像今天这样，因这份忙碌与充实而感到由衷的幸福与快乐。或许，这就是热爱的力量。<br /><br />
+                我理解你们此刻的犹豫与徘徊，也深深懂得你们的压力与纠结。所以，我不打算给你们任何劝告或建议，只想由衷地祝福你们：愿你们拥有那份勇气——坚持所爱的勇气，不懈追求的勇气，以及适时放手的勇气。<br /><br />
+                别让忧虑消磨了你的决心，也别让质疑淹没了你的胆识。最后希望你们最终能和我们一样，勇敢地成为自己！
+              </p>
+              <div class="mt-4">
+                <button class="like-btn" data-count="0">
+                  <i class="far fa-heart"></i>
+                  <span class="like-count">0</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- 报名部分 -->
     <section id="apply" class="py-16 md:py-24 hero-section">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-2xl md:text-3xl font-bold mb-8">加入卓越新闻班</h2>
-            <p class="text-lg mb-8 max-w-2xl mx-auto">如果你对新闻传媒充满热情，渴望成为一名优秀的新闻传播人才，欢迎加入我们！</p>
-            <p class="text-lg mb-8">咨询电话：13953985036</p>
-            <a href="附件3 西北民族大学卓越新闻学实验班申请表.doc" download class="btn-primary inline-block px-8 py-3 rounded-full text-lg font-medium">下载申请表</a>
-        </div>
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-8">加入卓越新闻班</h2>
+        <p class="text-lg mb-8 max-w-2xl mx-auto">
+          如果你对新闻传媒充满热情，渴望成为一名优秀的新闻传播人才，欢迎加入我们！
+        </p>
+        <p class="text-lg mb-8">咨询电话：13953985036</p>
+        <a
+          href="附件3 西北民族大学卓越新闻学实验班申请表.doc"
+          download
+          class="btn-primary inline-block px-8 py-3 rounded-full text-lg font-medium"
+          >下载申请表</a
+        >
+      </div>
     </section>
 
     <!-- 微信二维码弹窗 -->
     <div id="wechatModal" class="wechat-modal">
-        <div class="wechat-modal-content">
-            <h3 class="text-lg font-semibold mb-4">扫码关注</h3>
-            <img src="微信二维码.png" alt="微信二维码">
-            <button id="closeModal" class="mt-4 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg">关闭</button>
-        </div>
+      <div class="wechat-modal-content">
+        <h3 class="text-lg font-semibold mb-4">扫码关注</h3>
+        <img src="微信二维码.png" alt="微信二维码" />
+        <button
+          id="closeModal"
+          class="mt-4 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg"
+        >
+          关闭
+        </button>
+      </div>
     </div>
 
     <!-- 页脚 -->
-    <footer style="background-color: var(--card-bg);">
-        <div class="container mx-auto px-4 py-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <h3 class="text-lg font-semibold mb-2">西北民族大学新闻传播学院</h3>
-                    <p class="text-sm">地址：兰州市榆中县夏官营村吴谢营社99号</p>
-                </div>
-                <div class="flex space-x-4">
-                    <a href="javascript:void(0);" id="wechatBtn" class="hover:text-opacity-70" style="color: var(--text-color);"><i class="fab fa-weixin text-xl"></i></a>
-                    <a href="https://weibo.com/xbmzuofficial" target="_blank" class="hover:text-opacity-70" style="color: var(--text-color);"><i class="fab fa-weibo text-xl"></i></a>
-                    <a href="javascript:void(0);" id="emailBtn" class="hover:text-opacity-70" style="color: var(--text-color);"><i class="fas fa-envelope text-xl"></i></a>
-                </div>
-            </div>
-            <div class="text-center mt-6 text-sm" style="color: var(--text-color);">
-                &copy; 2023 西北民族大学新闻传播学院 版权所有
-            </div>
+    <footer style="background-color: var(--card-bg)">
+      <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <h3 class="text-lg font-semibold mb-2">西北民族大学新闻传播学院</h3>
+            <p class="text-sm">地址：兰州市榆中县夏官营村吴谢营社99号</p>
+          </div>
+          <div class="flex space-x-4">
+            <a
+              href="javascript:void(0);"
+              id="wechatBtn"
+              class="hover:text-opacity-70"
+              style="color: var(--text-color)"
+              ><i class="fab fa-weixin text-xl"></i
+            ></a>
+            <a
+              href="https://weibo.com/xbmzuofficial"
+              target="_blank"
+              class="hover:text-opacity-70"
+              style="color: var(--text-color)"
+              ><i class="fab fa-weibo text-xl"></i
+            ></a>
+            <a
+              href="javascript:void(0);"
+              id="emailBtn"
+              class="hover:text-opacity-70"
+              style="color: var(--text-color)"
+              ><i class="fas fa-envelope text-xl"></i
+            ></a>
+          </div>
         </div>
+        <div class="text-center mt-6 text-sm" style="color: var(--text-color)">
+          &copy; 2023 西北民族大学新闻传播学院 版权所有
+        </div>
+      </div>
     </footer>
 
     <script>
-        // 深色/浅色模式切换
-        const themeToggle = document.getElementById('themeToggle');
-        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-        
-        // 初始化主题
-        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && prefersDarkScheme.matches)) {
-            document.documentElement.classList.add('dark');
+      // 深色/浅色模式切换
+      const themeToggle = document.getElementById("themeToggle");
+      const prefersDarkScheme = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      );
+
+      // 初始化主题
+      if (
+        localStorage.getItem("theme") === "dark" ||
+        (!localStorage.getItem("theme") && prefersDarkScheme.matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+
+      themeToggle.addEventListener("click", () => {
+        if (document.documentElement.classList.contains("dark")) {
+          document.documentElement.classList.remove("dark");
+          localStorage.setItem("theme", "light");
         } else {
-            document.documentElement.classList.remove('dark');
+          document.documentElement.classList.add("dark");
+          localStorage.setItem("theme", "dark");
         }
-        
-        themeToggle.addEventListener('click', () => {
-            if (document.documentElement.classList.contains('dark')) {
-                document.documentElement.classList.remove('dark');
-                localStorage.setItem('theme', 'light');
-            } else {
-                document.documentElement.classList.add('dark');
-                localStorage.setItem('theme', 'dark');
-            }
+      });
+
+      // 轮播图功能
+      const carousel = document.querySelector(".carousel");
+      const carouselInner = carousel.querySelector(".carousel-inner");
+      const carouselItems = carousel.querySelectorAll(".carousel-item");
+      const prevBtn = carousel.querySelector(".prev");
+      const nextBtn = carousel.querySelector(".next");
+      const indicators = carousel.querySelector(".carousel-indicators");
+
+      let currentIndex = 0;
+      const itemCount = carouselItems.length;
+
+      // 创建指示器
+      for (let i = 0; i < itemCount; i++) {
+        const indicator = document.createElement("div");
+        indicator.classList.add("carousel-indicator");
+        if (i === 0) indicator.classList.add("active");
+        indicator.addEventListener("click", () => {
+          goToSlide(i);
         });
-        
-        // 轮播图功能
-        const carousel = document.querySelector('.carousel');
-        const carouselInner = carousel.querySelector('.carousel-inner');
-        const carouselItems = carousel.querySelectorAll('.carousel-item');
-        const prevBtn = carousel.querySelector('.prev');
-        const nextBtn = carousel.querySelector('.next');
-        const indicators = carousel.querySelector('.carousel-indicators');
-        
-        let currentIndex = 0;
-        const itemCount = carouselItems.length;
-        
-        // 创建指示器
-        for (let i = 0; i < itemCount; i++) {
-            const indicator = document.createElement('div');
-            indicator.classList.add('carousel-indicator');
-            if (i === 0) indicator.classList.add('active');
-            indicator.addEventListener('click', () => {
-                goToSlide(i);
-            });
-            indicators.appendChild(indicator);
-        }
-        
-        const indicatorDots = carousel.querySelectorAll('.carousel-indicator');
-        
-        function goToSlide(index) {
-            currentIndex = index;
-            carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
-            
-            // 更新指示器
-            indicatorDots.forEach((dot, i) => {
-                if (i === currentIndex) {
-                    dot.classList.add('active');
-                } else {
-                    dot.classList.remove('active');
-                }
-            });
-        }
-        
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + itemCount) % itemCount;
-            goToSlide(currentIndex);
+        indicators.appendChild(indicator);
+      }
+
+      const indicatorDots = carousel.querySelectorAll(".carousel-indicator");
+
+      function goToSlide(index) {
+        currentIndex = index;
+        carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        // 更新指示器
+        indicatorDots.forEach((dot, i) => {
+          if (i === currentIndex) {
+            dot.classList.add("active");
+          } else {
+            dot.classList.remove("active");
+          }
         });
-        
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % itemCount;
-            goToSlide(currentIndex);
-        });
-        
-        // 自动轮播
-        let autoplayInterval = setInterval(() => {
-            currentIndex = (currentIndex + 1) % itemCount;
-            goToSlide(currentIndex);
+      }
+
+      prevBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + itemCount) % itemCount;
+        goToSlide(currentIndex);
+      });
+
+      nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % itemCount;
+        goToSlide(currentIndex);
+      });
+
+      // 自动轮播
+      let autoplayInterval = setInterval(() => {
+        currentIndex = (currentIndex + 1) % itemCount;
+        goToSlide(currentIndex);
+      }, 5000);
+
+      carousel.addEventListener("mouseenter", () => {
+        clearInterval(autoplayInterval);
+      });
+
+      carousel.addEventListener("mouseleave", () => {
+        autoplayInterval = setInterval(() => {
+          currentIndex = (currentIndex + 1) % itemCount;
+          goToSlide(currentIndex);
         }, 5000);
-        
-        carousel.addEventListener('mouseenter', () => {
-            clearInterval(autoplayInterval);
+      });
+
+      // FAQ 折叠功能
+      const faqQuestions = document.querySelectorAll(".faq-question");
+
+      faqQuestions.forEach((question) => {
+        question.addEventListener("click", () => {
+          const answer = question.nextElementSibling;
+          const icon = question.querySelector("i");
+
+          if (answer.classList.contains("active")) {
+            answer.classList.remove("active");
+            icon.classList.remove("fa-chevron-up");
+            icon.classList.add("fa-chevron-down");
+          } else {
+            answer.classList.add("active");
+            icon.classList.remove("fa-chevron-down");
+            icon.classList.add("fa-chevron-up");
+          }
         });
-        
-        carousel.addEventListener('mouseleave', () => {
-            autoplayInterval = setInterval(() => {
-                currentIndex = (currentIndex + 1) % itemCount;
-                goToSlide(currentIndex);
-            }, 5000);
+      });
+
+      // 问题留言折叠功能
+      const commentsHeader = document.querySelector(".comments-header");
+      const commentsContainer = document.querySelector(".comments-container");
+      const commentsIcon = commentsHeader.querySelector("i");
+
+      // 初始状态设置为折叠
+      commentsContainer.classList.remove("active");
+      commentsIcon.classList.remove("fa-chevron-up");
+      commentsIcon.classList.add("fa-chevron-down");
+
+      commentsHeader.addEventListener("click", () => {
+        if (commentsContainer.classList.contains("active")) {
+          commentsContainer.classList.remove("active");
+          commentsIcon.classList.remove("fa-chevron-up");
+          commentsIcon.classList.add("fa-chevron-down");
+        } else {
+          commentsContainer.classList.add("active");
+          commentsIcon.classList.remove("fa-chevron-down");
+          commentsIcon.classList.add("fa-chevron-up");
+        }
+      });
+
+      // 点赞功能
+      const likeBtns = document.querySelectorAll(".like-btn");
+
+      likeBtns.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          const icon = this.querySelector("i");
+          const countSpan = this.querySelector(".like-count");
+          let count = parseInt(this.getAttribute("data-count"));
+
+          if (icon.classList.contains("far")) {
+            icon.classList.remove("far");
+            icon.classList.add("fas");
+            icon.style.color = "#FF6B6B";
+            count++;
+          } else {
+            icon.classList.remove("fas");
+            icon.classList.add("far");
+            icon.style.color = "";
+            count--;
+          }
+
+          this.setAttribute("data-count", count);
+          countSpan.textContent = count;
         });
-        
-        // FAQ 折叠功能
-        const faqQuestions = document.querySelectorAll('.faq-question');
-        
-        faqQuestions.forEach(question => {
-            question.addEventListener('click', () => {
-                const answer = question.nextElementSibling;
-                const icon = question.querySelector('i');
-                
-                if (answer.classList.contains('active')) {
-                    answer.classList.remove('active');
-                    icon.classList.remove('fa-chevron-up');
-                    icon.classList.add('fa-chevron-down');
-                } else {
-                    answer.classList.add('active');
-                    icon.classList.remove('fa-chevron-down');
-                    icon.classList.add('fa-chevron-up');
-                }
-            });
-        });
-        
-        // 问题留言折叠功能
-        const commentsHeader = document.querySelector('.comments-header');
-        const commentsContainer = document.querySelector('.comments-container');
-        const commentsIcon = commentsHeader.querySelector('i');
-        
-        // 初始状态设置为折叠
-        commentsContainer.classList.remove('active');
-        commentsIcon.classList.remove('fa-chevron-up');
-        commentsIcon.classList.add('fa-chevron-down');
-        
-        commentsHeader.addEventListener('click', () => {
-            if (commentsContainer.classList.contains('active')) {
-                commentsContainer.classList.remove('active');
-                commentsIcon.classList.remove('fa-chevron-up');
-                commentsIcon.classList.add('fa-chevron-down');
-            } else {
-                commentsContainer.classList.add('active');
-                commentsIcon.classList.remove('fa-chevron-down');
-                commentsIcon.classList.add('fa-chevron-up');
-            }
-        });
-        
-        // 点赞功能
-        const likeBtns = document.querySelectorAll('.like-btn');
-        
-        likeBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
-                const icon = this.querySelector('i');
-                const countSpan = this.querySelector('.like-count');
-                let count = parseInt(this.getAttribute('data-count'));
-                
-                if (icon.classList.contains('far')) {
-                    icon.classList.remove('far');
-                    icon.classList.add('fas');
-                    icon.style.color = '#FF6B6B';
-                    count++;
-                } else {
-                    icon.classList.remove('fas');
-                    icon.classList.add('far');
-                    icon.style.color = '';
-                    count--;
-                }
-                
-                this.setAttribute('data-count', count);
-                countSpan.textContent = count;
-            });
-        });
-        
-        // 提交留言功能
-        // 提交留言功能
-        const commentForm = document.querySelector('.comment-form');
-        const commentTextarea = commentForm.querySelector('textarea');
-        const commentNameInput = commentForm.querySelector('input');
-        const commentSubmitBtn = commentForm.querySelector('button');
-        
-        commentSubmitBtn.addEventListener('click', () => {
-            const commentText = commentTextarea.value.trim();
-            if (commentText) {
-                // 确保只在问题留言部分添加新留言
-                const commentList = document.querySelector('.comments-container');
-                const newComment = document.createElement('div');
-                newComment.classList.add('comment-item', 'pb-4');
-                
-                const today = new Date();
-                const dateStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
-                
-                let userName = commentNameInput.value.trim();
-                if (!userName) userName = '匿名用户';
-                
-                newComment.innerHTML = `
+      });
+
+      // 提交留言功能
+      // 提交留言功能
+      const commentForm = document.querySelector(".comment-form");
+      const commentTextarea = commentForm.querySelector("textarea");
+      const commentNameInput = commentForm.querySelector("input");
+      const commentSubmitBtn = commentForm.querySelector("button");
+
+      commentSubmitBtn.addEventListener("click", () => {
+        const commentText = commentTextarea.value.trim();
+        if (commentText) {
+          // 确保只在问题留言部分添加新留言
+          const commentList = document.querySelector(".comments-container");
+          const newComment = document.createElement("div");
+          newComment.classList.add("comment-item", "pb-4");
+
+          const today = new Date();
+          const dateStr = `${today.getFullYear()}-${String(
+            today.getMonth() + 1
+          ).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
+
+          let userName = commentNameInput.value.trim();
+          if (!userName) userName = "匿名用户";
+
+          newComment.innerHTML = `
                     <div class="flex justify-between items-start mb-2">
                         <div class="font-medium">${userName}</div>
                         <div class="text-sm text-gray-500">${dateStr}</div>
@@ -824,110 +1094,110 @@
                         </div>
                     </div>
                 `;
-                
-                commentList.prepend(newComment);
-                
-                // 清空表单
-                commentTextarea.value = '';
-                commentNameInput.value = '';
-                
-                // 为新添加的回复按钮绑定事件
-                const newReplyBtn = newComment.querySelector('.reply-btn');
-                newReplyBtn.addEventListener('click', () => {
-                    const replyForm = newReplyBtn.nextElementSibling;
-                    replyForm.classList.toggle('hidden');
-                });
-                
-                // 确保留言容器是可见的
-                if (!commentsContainer.classList.contains('active')) {
-                    commentsContainer.classList.add('active');
-                    commentsIcon.classList.remove('fa-chevron-down');
-                    commentsIcon.classList.add('fa-chevron-up');
-                }
-            }
-        });
-        
-        // 微信二维码弹窗
-        const wechatBtn = document.getElementById('wechatBtn');
-        const wechatModal = document.getElementById('wechatModal');
-        const closeModal = document.getElementById('closeModal');
-        
-        wechatBtn.addEventListener('click', () => {
-            wechatModal.style.display = 'flex';
-        });
-        
-        closeModal.addEventListener('click', () => {
-            wechatModal.style.display = 'none';
-        });
-        
-        // 点击弹窗外部关闭
-        wechatModal.addEventListener('click', (e) => {
-            if (e.target === wechatModal) {
-                wechatModal.style.display = 'none';
-            }
-        });
-        
-        // 邮箱复制功能
-        const emailBtn = document.getElementById('emailBtn');
-        emailBtn.addEventListener('click', () => {
-            const email = '3545215647@qq.com';
-            navigator.clipboard.writeText(email).then(() => {
-                // 创建提示元素
-                const tooltip = document.createElement('div');
-                tooltip.textContent = '已复制邮箱账号';
-                tooltip.style.position = 'fixed';
-                tooltip.style.bottom = '20px';
-                tooltip.style.left = '50%';
-                tooltip.style.transform = 'translateX(-50%)';
-                tooltip.style.padding = '8px 16px';
-                tooltip.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
-                tooltip.style.color = 'white';
-                tooltip.style.borderRadius = '4px';
-                tooltip.style.zIndex = '1000';
-                
-                document.body.appendChild(tooltip);
-                
-                // 2秒后移除提示
-                setTimeout(() => {
-                    document.body.removeChild(tooltip);
-                }, 2000);
-            });
-        });
-        
-        // 滚动动画
-        const animateElements = document.querySelectorAll('.animate-fade-in');
-        
-        function checkScroll() {
-            animateElements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-                
-                if (elementTop < windowHeight * 0.9) {
-                    element.style.opacity = '1';
-                    element.style.transform = 'translateY(0)';
-                }
-            });
+
+          commentList.prepend(newComment);
+
+          // 清空表单
+          commentTextarea.value = "";
+          commentNameInput.value = "";
+
+          // 为新添加的回复按钮绑定事件
+          const newReplyBtn = newComment.querySelector(".reply-btn");
+          newReplyBtn.addEventListener("click", () => {
+            const replyForm = newReplyBtn.nextElementSibling;
+            replyForm.classList.toggle("hidden");
+          });
+
+          // 确保留言容器是可见的
+          if (!commentsContainer.classList.contains("active")) {
+            commentsContainer.classList.add("active");
+            commentsIcon.classList.remove("fa-chevron-down");
+            commentsIcon.classList.add("fa-chevron-up");
+          }
         }
-        
-        window.addEventListener('scroll', checkScroll);
-        window.addEventListener('load', checkScroll);
-        
-        // 平滑滚动
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
+      });
+
+      // 微信二维码弹窗
+      const wechatBtn = document.getElementById("wechatBtn");
+      const wechatModal = document.getElementById("wechatModal");
+      const closeModal = document.getElementById("closeModal");
+
+      wechatBtn.addEventListener("click", () => {
+        wechatModal.style.display = "flex";
+      });
+
+      closeModal.addEventListener("click", () => {
+        wechatModal.style.display = "none";
+      });
+
+      // 点击弹窗外部关闭
+      wechatModal.addEventListener("click", (e) => {
+        if (e.target === wechatModal) {
+          wechatModal.style.display = "none";
+        }
+      });
+
+      // 邮箱复制功能
+      const emailBtn = document.getElementById("emailBtn");
+      emailBtn.addEventListener("click", () => {
+        const email = "3545215647@qq.com";
+        navigator.clipboard.writeText(email).then(() => {
+          // 创建提示元素
+          const tooltip = document.createElement("div");
+          tooltip.textContent = "已复制邮箱账号";
+          tooltip.style.position = "fixed";
+          tooltip.style.bottom = "20px";
+          tooltip.style.left = "50%";
+          tooltip.style.transform = "translateX(-50%)";
+          tooltip.style.padding = "8px 16px";
+          tooltip.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+          tooltip.style.color = "white";
+          tooltip.style.borderRadius = "4px";
+          tooltip.style.zIndex = "1000";
+
+          document.body.appendChild(tooltip);
+
+          // 2秒后移除提示
+          setTimeout(() => {
+            document.body.removeChild(tooltip);
+          }, 2000);
         });
+      });
+
+      // 滚动动画
+      const animateElements = document.querySelectorAll(".animate-fade-in");
+
+      function checkScroll() {
+        animateElements.forEach((element) => {
+          const elementTop = element.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+
+          if (elementTop < windowHeight * 0.9) {
+            element.style.opacity = "1";
+            element.style.transform = "translateY(0)";
+          }
+        });
+      }
+
+      window.addEventListener("scroll", checkScroll);
+      window.addEventListener("load", checkScroll);
+
+      // 平滑滚动
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
     </script>
-</body>
+  </body>
 </html>
