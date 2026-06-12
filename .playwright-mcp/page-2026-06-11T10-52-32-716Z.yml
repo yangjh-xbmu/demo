@@ -1,0 +1,186 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]: 
+        - heading "西北民族大学卓越新闻学实验班" [level=1] [ref=e6]
+      - generic [ref=e7]:
+        - link "卓越新闻学实验班简介" [ref=e8] [cursor=pointer]:
+          - /url: "#intro"
+        - link "问题咨询" [ref=e9] [cursor=pointer]:
+          - /url: "#faq"
+        - link "实习风采" [ref=e10] [cursor=pointer]:
+          - /url: "#videos"
+        - link "学长学姐说" [ref=e11] [cursor=pointer]:
+          - /url: "#seniors"
+        - generic [ref=e12] [cursor=pointer]:
+          - generic [ref=e13]: 
+          - generic [ref=e14]: 
+  - generic [ref=e16]:
+    - heading "第六届卓越新闻学实验班招生" [level=1] [ref=e17]
+    - paragraph [ref=e18]: 培养具有坚定政治方向、德智体美劳全面、复合型知识结构、专业技能卓越的新闻人才
+    - link "立即报名" [ref=e19] [cursor=pointer]:
+      - /url: "#apply"
+  - generic [ref=e21]:
+    - heading "卓越新闻学实验班简介" [level=2] [ref=e22]
+    - generic [ref=e23]:
+      - button "" [ref=e36] [cursor=pointer]:
+        - generic [ref=e37]: 
+      - button "" [ref=e38] [cursor=pointer]:
+        - generic [ref=e39]: 
+    - heading "实验班风采" [level=3] [ref=e53]
+    - generic [ref=e54]:
+      - paragraph [ref=e55]: 为响应《教育部中共中央宣传部关于提高高校新闻传播人才培养能力实施卓越新闻传播人才教育培养计划2.0的意见》《新文科建设宣言》《西北民族大学加快建设一流本科教育行动计划（2018—2022）》等文件的精神要求，新闻传播学院自2021年开设卓越新闻学实验班。
+      - paragraph [ref=e56]: 卓越新闻学实验班依托国家级一流本科专业新闻学专业，拥有稳定合理的师资队伍，特色鲜明的实践教学体系，全面深入的协同育人机制以及先进齐全的教学设施，能够为每一位同学提供高质量的教学平台、创新的实践教学活动以及丰富的实习实训资源。
+      - paragraph [ref=e57]: 卓越新闻实验班旨在培养德智体美劳全面，具有坚定的政治方向、复合型的知识结构、全面的专业技能和优秀的发展潜质跨学科全媒化复合型新闻传播人才。毕业生适合在通讯社、报社、杂志社网站及新闻传媒集团中担任新闻记者、新闻编辑，或者在党政机关、企事业单位从事新闻传播管理方面的相关工作。
+      - paragraph [ref=e58]: 根据《教育部中共中央宣传部关于提高高校新闻传播人才培养能力实施卓越新闻传播人才教育培养计划2.0的意见》《新文科建设宣言》《西北民族大学本科学生转专业管理办法》等文件要求，学校组织开展第六届卓越新闻学实验班选拔录取工作，具体事项通知如下：
+      - paragraph [ref=e59]: 一 、选拔范围
+      - paragraph [ref=e60]: 卓越新闻学实验班（以下简称"实验班"）2026年拟选拔招收15名学生，面向全校本科专业二年级在校学生选拔，组成实验班。报名学生须符合《西北民族大学本科学生转专业管理办法》规定的转专业条件，新闻学专业在校学生不纳入本次选拔范围。
+      - paragraph [ref=e61]: 二、培养特色与项目优势
+      - paragraph [ref=e62]: （一）小班化培养。实验班每届选拔15人，实行学业导师与业界导师双重指导，人均资源远超普通班级，确保个性化培养质量。
+      - paragraph [ref=e63]: （二）跨校智能传播微专业。学生可自愿修读上海交通大学智能传播微专业，完成人工智能与传播学交叉课程，获得上海交通大学微专业证书。
+      - paragraph [ref=e64]: （三）一线媒体集体实习。学院与中国新闻社、潮新闻等一线行业机构建立集体实习通道，统一组织、对口安排，在校期间即可积累头部媒体实战经验。
+      - paragraph [ref=e65]: （四）海外交换学习。学生可自愿赴加拿大皇家大学交换学习，选修课程学分在硕士阶段可申请免修，为"本硕贯通"提供海外通道。
+      - paragraph [ref=e66]: （五）一流实验平台支撑。学院建有四个专业实验室，总面积912平方米，设备资产投入逾千万元。广播电视综合实验室为省级实验教学示范中心，下设元宇宙与人工智能信息开发实验室，配备AIGC训练推理工作站。智能化网络信息传播风险管理决策实验室，深度融合AI图像识别、语音合成与舆情分析技术。全媒化新闻制作流程虚拟仿真教学平台覆盖融媒体内容生产、多终端发布与数据分析全流程，学生可在校内完成"采写编评播"一体化实训。
+      - paragraph [ref=e67]: 三、选拔基本条件
+      - paragraph [ref=e68]: 原则上报名学生除了符合《西北民族大学本科学生转专业管理办法》相关要求外，还应具备以下条件：
+      - paragraph [ref=e69]: （一）具有高尚的爱国主义情操和集体主义精神，社会主义信念坚定，社会责任感强，遵纪守法，积极向上，身心健康。
+      - paragraph [ref=e70]: （二）对新闻传媒职业具有浓厚兴趣，有较强的创新意识，创新能力和专业能力潜质。
+      - paragraph [ref=e71]: （三）勤奋学习，刻苦钻研，成绩优秀，截至资格审核时无正考不及格课程；第四学期修读课程成绩全部合格作为最终录取条件。
+      - paragraph [ref=e72]: （四）诚实守信，学风端正，无任何考试违规和剽窃他人学术成果记录。
+      - paragraph [ref=e73]: （五）品行表现优良，无任何违法违纪受处分记录。
+      - paragraph [ref=e74]: 四、选拔录取流程
+      - paragraph [ref=e75]: （一）招生宣传（6月9日—14日）：面向全校发布通知，开展线上线下招生推广，发放宣传册、预报名表，并面向全校有意愿报名的学生召开宣讲会。
+      - paragraph [ref=e76]: （二）个人报名（6月9日—18日）：符合条件的学生须携带以下材料电子版和纸质版到新闻传播学院（西北新村校区舞蹈楼409办公室；榆中校区致美楼309教室）报名，申请表及证明材料提交后不予更改，未按要求提交申请表及证明材料的学生视为自动放弃。
+      - paragraph [ref=e77]:
+        - text: 1.《西北民族大学卓越新闻学实验班申请表》；
+        - text: 2.截至报名时已修读课程成绩单原件，目前所在学院（部）审核签字并加盖公章（空白处本人承诺并签字："本人确保提供材料真实无误"）。
+      - paragraph [ref=e78]: 报名时，申请学生可提供（非必须）相关证明材料：全国大学英语四级或六级考试成绩单或外语专业等级考试成绩单、计算机二级等级证书等，以上材料原件和复印件一式一份，原件现场核查后返回学生本人，在复印件空白处本人承诺并签字："本人确保提供材料真实无误"。
+      - paragraph [ref=e79]: （三）资格审核（6月18日—19日）：根据选拔基本条件对申报材料进行审核，并核验截至报名时已修读课程成绩情况。
+      - paragraph [ref=e80]: （四）资格审核结果公布及专业笔试、专业面试（6月20日前、6月21日）：6月20日前，新闻传播学院在学院官网公布资格审查合格并参加专业笔试和专业面试的学生名单，以及笔试和面试的时间、地点；6月21日，按公布安排组织专业笔试和专业面试。
+      - paragraph [ref=e81]: （五）成绩核算（6月22日）：按照综合测评成绩公式（综合测评成绩=学业成绩得分+专业笔试成绩得分+专业面试成绩得分）进行成绩核算并排名。在同等条件下，优先考虑通过大学英语四级或六级考试、专业外语等级考试、计算机二级及以上等级考试的学生。
+      - paragraph [ref=e82]: （六）拟录取候选名单公示（6月23日前）：按综合测评成绩排名由高到低确定拟录取候选名单，名额录完即止。新闻传播学院对拟录取候选学生名单在学院官网面向全校公示，公示期不少于3个工作日。公示期间，如有异议，请以书面形式（实名制）向学院反馈。学院查明情况后，公布处理结果。
+      - paragraph [ref=e83]: （七）最终资格复核及录取通知（7月24日前）：公示无异议后，学院对拟录取候选学生第四学期修读课程成绩进行复核。第四学期修读课程成绩全部合格的，确定为最终录取学生并发放录取通知书；不符合条件的，不予录取。如拟录取候选学生因第四学期课程成绩不合格或其他原因不符合录取条件，学院可按综合测评成绩排名依次递补，并按规定进行公示和复核。
+      - paragraph [ref=e84]: 五、注意事项
+      - paragraph [ref=e85]:
+        - text: （一）根据《西北民族大学本科学生转专业管理办法》相关规定，学生有下列情形之一者，不予转专业：
+        - text: 1.身体条件不符合申请转入专业体检标准者；
+        - text: 2.以特殊招生形式录取的学生，如艺术类、体育类等专业学生，不得转专业；
+        - text: 3.国家有相关规定或录取前与学校有明确约定的，不得转专业。
+      - paragraph [ref=e86]: （二）最终录取学生经确认后，无故不得随意放弃实验班学习资格；已转专业学生不得申请回原专业学习。
+  - generic [ref=e88]:
+    - heading "实习风采" [level=2] [ref=e89]
+    - paragraph [ref=e90]: 卓越新闻学实验班学子在潮新闻等一线媒体的实习日常
+    - generic [ref=e91]:
+      - paragraph [ref=e94]: 王林焰 · 工作日常
+      - paragraph [ref=e97]: 王林焰 · 办公大楼
+      - paragraph [ref=e100]: 王林焰 · 办公环境
+      - paragraph [ref=e103]: 吴洋洋 · 工作日常
+      - paragraph [ref=e106]: 吴洋洋 · 老师指导
+      - paragraph [ref=e109]: 张美娣 · 工作日常
+      - paragraph [ref=e112]: 张美娣 · 办公大楼
+      - paragraph [ref=e115]: 张美娣 · 工作环境
+  - generic [ref=e117]:
+    - heading "问题咨询" [level=2] [ref=e118]
+    - generic [ref=e119]:
+      - heading "常见问题" [level=3] [ref=e120]
+      - generic [ref=e121]:
+        - generic [ref=e123] [cursor=pointer]:
+          - heading "卓越新闻学实验班的选拔条件是什么？" [level=4] [ref=e124]
+          - generic [ref=e125]: 
+        - generic [ref=e127] [cursor=pointer]:
+          - heading "卓越新闻学实验班与普通新闻学专业有什么区别？" [level=4] [ref=e128]
+          - generic [ref=e129]: 
+        - generic [ref=e131] [cursor=pointer]:
+          - heading "转入卓越新闻学实验班后，原专业课程如何处理？" [level=4] [ref=e132]
+          - generic [ref=e133]: 
+        - generic [ref=e135] [cursor=pointer]:
+          - heading "卓越新闻学实验班的就业前景如何？" [level=4] [ref=e136]
+          - generic [ref=e137]: 
+        - generic [ref=e139] [cursor=pointer]:
+          - heading "卓越新闻学实验班都有哪些课程呢？" [level=4] [ref=e140]
+          - generic [ref=e141]: 
+        - generic [ref=e143] [cursor=pointer]:
+          - heading "卓越新闻学实验班去哪实习呀？需要自己找实习机会吗？" [level=4] [ref=e144]
+          - generic [ref=e145]: 
+        - generic [ref=e147] [cursor=pointer]:
+          - heading "我加入卓越新闻学实验班后，奖学金助学金怎么办？" [level=4] [ref=e148]
+          - generic [ref=e149]: 
+        - generic [ref=e151] [cursor=pointer]:
+          - heading "卓越新闻学实验班的保研、留学名额有多少？" [level=4] [ref=e152]
+          - generic [ref=e153]: 
+        - generic [ref=e155] [cursor=pointer]:
+          - heading "卓越新闻学实验班的团员、党员如何管理？" [level=4] [ref=e156]
+          - generic [ref=e157]: 
+  - generic [ref=e159]:
+    - heading "学长学姐有话说" [level=2] [ref=e160]
+    - generic [ref=e161]:
+      - generic [ref=e163]:
+        - text: “
+        - heading "牢二次元学长" [level=3] [ref=e164]
+        - paragraph [ref=e165]: 绩点低也不是事，大胆报名，勇敢尝试，你的赞歌是勇气的赞歌，你的伟大是勇气的伟大！
+        - button " 0" [ref=e167] [cursor=pointer]:
+          - generic [ref=e168]: 
+          - text: "0"
+      - generic [ref=e170]:
+        - text: “
+        - heading "凤梨学姐" [level=3] [ref=e171]
+        - paragraph [ref=e172]: 如果你觉得原专业不适合自己，那就来吧！勇敢一次，说不定有意想不到的结果。卓越新闻学实验班能教你更多的思考，能给你更多的松弛感。
+        - button " 0" [ref=e174] [cursor=pointer]:
+          - generic [ref=e175]: 
+          - text: "0"
+      - generic [ref=e177]:
+        - text: “
+        - heading "睡觉第一学姐" [level=3] [ref=e178]
+        - paragraph [ref=e179]:
+          - text: 上联：课少，事少，睡眠多；
+          - text: 下联：人善，师善，成绩高；
+          - text: 横批：大胆报名
+        - button " 0" [ref=e181] [cursor=pointer]:
+          - generic [ref=e182]: 
+          - text: "0"
+      - generic [ref=e184]:
+        - text: “
+        - heading "儋州学长" [level=3] [ref=e185]
+        - paragraph [ref=e186]: 新时代斜杠青年，有我有你！
+        - button " 0" [ref=e188] [cursor=pointer]:
+          - generic [ref=e189]: 
+          - text: "0"
+      - generic [ref=e191]:
+        - text: “
+        - heading "炎焱燚学姐" [level=3] [ref=e192]
+        - paragraph [ref=e193]: 精品小班课，新闻干货多。实战练本领，我们在等你。
+        - button " 0" [ref=e195] [cursor=pointer]:
+          - generic [ref=e196]: 
+          - text: "0"
+      - generic [ref=e198]:
+        - text: “
+        - heading "丰年好大\"雪\"姐" [level=3] [ref=e199]
+        - paragraph [ref=e200]: 从零开始的实验班生活，不想来试一试嘛？
+        - button " 0" [ref=e202] [cursor=pointer]:
+          - generic [ref=e203]: 
+          - text: "0"
+      - generic [ref=e205]:
+        - text: “
+        - heading "睡前不数洋学姐" [level=3] [ref=e206]
+        - paragraph [ref=e207]:
+          - text: 我想告诉你们学习新闻的种种——是俯身倾听街头巷尾的市井烟火，是试图理解宏大叙事下个体命运的微光，是用笔尖或镜头传递远方哭声与欢笑的温度，是在喧嚣世界里努力搭建理解桥梁的孤独与热望……
+          - text: 但此刻，我更想说的是：转专业之后，虽然很忙碌。但我从未像今天这样，因这份忙碌与充实而感到由衷的幸福与快乐。或许，这就是热爱的力量。
+          - text: 我理解你们此刻的犹豫与徘徊，也深深懂得你们的压力与纠结。所以，我不打算给你们任何劝告或建议，只想由衷地祝福你们：愿你们拥有那份勇气——坚持所爱的勇气，不懈追求的勇气，以及适时放手的勇气。
+          - text: 别让忧虑消磨了你的决心，也别让质疑淹没了你的胆识。最后希望你们最终能和我一样，勇敢做自己！
+        - button " 0" [ref=e209] [cursor=pointer]:
+          - generic [ref=e210]: 
+          - text: "0"
+  - generic [ref=e212]:
+    - heading "加入卓越新闻学实验班" [level=2] [ref=e213]
+    - paragraph [ref=e214]: 如果你对新闻传媒充满热情，渴望成为一名优秀的新闻传播人才，欢迎加入我们！
+    - paragraph [ref=e215]: 热线咨询电话：13373310687 0931—4512887
+    - paragraph [ref=e216]: 联系人：马爽。
+    - paragraph [ref=e217]: 招生QQ群：1104330140
+    - link "下载申请表" [ref=e218] [cursor=pointer]:
+      - /url: 附件3 西北民族大学卓越新闻学实验班申请表.doc
+  - generic [ref=e219]:
+    - text: 制作团队：2023级卓越新闻学实验班陈倩倩、2022级卓越新闻实验班 陈怡帆、苏得凯、王林焰、郑南兵
+    - text: 指导教师：杨志宏、崔永鹏
+  - generic [ref=e220]: © 2026 西北民族大学新闻传播学院 版权所有
+  - img [ref=e222] [cursor=pointer]

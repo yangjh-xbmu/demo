@@ -147,6 +147,47 @@
         background-color: white;
       }
 
+      .video-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+
+      .video-card {
+        border-radius: 0.5rem;
+        overflow: hidden;
+        background-color: var(--card-bg);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .video-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+
+      .video-card video {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        display: block;
+        object-fit: cover;
+        background-color: #000;
+      }
+
+      .video-caption {
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: var(--text-color);
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        .video-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
       .faq-item {
         border-bottom: 1px solid var(--border-color);
       }
@@ -341,6 +382,12 @@
             >问题咨询</a
           >
           <a
+            href="#videos"
+            class="hidden md:block hover:text-opacity-70"
+            style="color: var(--text-color)"
+            >实习风采</a
+          >
+          <a
             href="#seniors"
             class="hidden md:block hover:text-opacity-70"
             style="color: var(--text-color)"
@@ -392,6 +439,22 @@
         <!-- 轮播图 -->
         <div class="carousel mb-12 max-w-4xl mx-auto animate-fade-in">
           <div class="carousel-inner">
+            <div
+              class="carousel-item"
+              style="background-image: url('23卓越1.jpg')"
+            ></div>
+            <div
+              class="carousel-item"
+              style="background-image: url('23卓越2.jpg')"
+            ></div>
+            <div
+              class="carousel-item"
+              style="background-image: url('23卓越3.jpg')"
+            ></div>
+            <div
+              class="carousel-item"
+              style="background-image: url('23卓越4.jpg')"
+            ></div>
             <div
               class="carousel-item"
               style="background-image: url('首轮1.jpg')"
@@ -506,10 +569,17 @@
             四、选拔录取流程
           </p>
           <p class="text-lg leading-relaxed" style="color: var(--text-color)">
-            （一）招生宣传（6月9日—14日）：面向全校发布通知，开展线上线下招生推广，发放宣传册、预报名表，并面向全校有意愿报名的学生召开宣讲会，同时开通热线咨询电话：13373310687；0931-4512887，联系人：马爽。
+            （一）招生宣传（6月9日—14日）：面向全校发布通知，开展线上线下招生推广，发放宣传册、预报名表，并面向全校有意愿报名的学生召开宣讲会，同时开通热线咨询电话：13373310687；0931—4512887，联系人：马爽。
           </p>
           <p class="text-lg leading-relaxed" style="color: var(--text-color)">
-            （二）个人报名（6月9日—18日）：符合条件的学生须携带以下材料电子版和纸质版到新闻传播学院（西北新村校区舞蹈楼409办公室；榆中校区致美楼309教室）报名，申请表及证明材料提交后不予更改，未按要求提交申请表及证明材料的学生视为自动放弃。1.《西北民族大学卓越新闻学实验班申请表》；2.截至报名时已修读课程成绩单原件，目前所在学院（部）审核签字并加盖公章（空白处本人承诺并签字："本人确保提供材料真实无误"）。报名时，申请学生可提供（非必须）相关证明材料：全国大学英语四级或六级考试成绩单或外语专业等级考试成绩单、计算机二级等级证书等，以上材料原件和复印件一式一份，原件现场核查后返回学生本人，在复印件空白处本人承诺并签字："本人确保提供材料真实无误"。
+            （二）个人报名（6月9日—18日）：符合条件的学生须携带以下材料电子版和纸质版到新闻传播学院（西北新村校区舞蹈楼409办公室；榆中校区致美楼309教室）报名，申请表及证明材料提交后不予更改，未按要求提交申请表及证明材料的学生视为自动放弃。
+          </p>
+          <p class="text-lg leading-relaxed" style="color: var(--text-color)">
+            1.《西北民族大学卓越新闻学实验班申请表》；<br/>
+            2.截至报名时已修读课程成绩单原件，目前所在学院（部）审核签字并加盖公章（空白处本人承诺并签字："本人确保提供材料真实无误"）。
+          </p>
+          <p class="text-lg leading-relaxed" style="color: var(--text-color)">
+            报名时，申请学生可提供（非必须）相关证明材料：全国大学英语四级或六级考试成绩单或外语专业等级考试成绩单、计算机二级等级证书等，以上材料原件和复印件一式一份，原件现场核查后返回学生本人，在复印件空白处本人承诺并签字："本人确保提供材料真实无误"。
           </p>
           <p class="text-lg leading-relaxed" style="color: var(--text-color)">
             （三）资格审核（6月18日—19日）：根据选拔基本条件对申报材料进行审核，并核验截至报名时已修读课程成绩情况。
@@ -530,7 +600,10 @@
             五、注意事项
           </p>
           <p class="text-lg leading-relaxed" style="color: var(--text-color)">
-            （一）根据《西北民族大学本科学生转专业管理办法》相关规定，学生有下列情形之一者，不予转专业：1.身体条件不符合申请转入专业体检标准者；2.以特殊招生形式录取的学生，如艺术类、体育类等专业学生，不得转专业；3.国家有相关规定或录取前与学校有明确约定的，不得转专业。
+            （一）根据《西北民族大学本科学生转专业管理办法》相关规定，学生有下列情形之一者，不予转专业：<br/>
+            1.身体条件不符合申请转入专业体检标准者；<br/>
+            2.以特殊招生形式录取的学生，如艺术类、体育类等专业学生，不得转专业；<br/>
+            3.国家有相关规定或录取前与学校有明确约定的，不得转专业。
           </p>
           <p class="text-lg leading-relaxed" style="color: var(--text-color)">
             （二）最终录取学生经确认后，无故不得随意放弃实验班学习资格；已转专业学生不得申请回原专业学习。
@@ -541,6 +614,75 @@
           <p class="text-lg leading-relaxed" style="color: var(--text-color)">
             学院坚持公平、公正、公开的原则，严格按照程序做好选拔录取相关工作。拟录取候选名单经学院党政联席会议研究同意、全校公示无异议后，结合第四学期课程成绩复核结果确定最终录取名单，并统一报教务处。未尽事宜，另行通知。
           </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 实习风采视频 -->
+    <section
+      id="videos"
+      class="py-16 md:py-24"
+      style="background-color: var(--bg-color)"
+    >
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-4"
+          style="color: var(--primary-color)"
+        >
+          实习风采
+        </h2>
+        <p class="text-center mb-12 text-lg" style="color: var(--text-color); opacity: 0.8">
+          卓越新闻学实验班学子在潮新闻等一线媒体的实习日常
+        </p>
+        <div class="video-grid max-w-6xl mx-auto">
+          <div class="video-card">
+            <video controls preload="metadata" poster="">
+              <source src="王林焰工作日常.mp4" type="video/mp4" />
+            </video>
+            <p class="video-caption">王林焰 · 工作日常</p>
+          </div>
+          <div class="video-card">
+            <video controls preload="metadata">
+              <source src="王林焰办公大楼.mp4" type="video/mp4" />
+            </video>
+            <p class="video-caption">王林焰 · 办公大楼</p>
+          </div>
+          <div class="video-card">
+            <video controls preload="metadata">
+              <source src="王林焰办公环境.mp4" type="video/mp4" />
+            </video>
+            <p class="video-caption">王林焰 · 办公环境</p>
+          </div>
+          <div class="video-card">
+            <video controls preload="metadata">
+              <source src="吴洋洋工作日常.mp4" type="video/mp4" />
+            </video>
+            <p class="video-caption">吴洋洋 · 工作日常</p>
+          </div>
+          <div class="video-card">
+            <video controls preload="metadata">
+              <source src="吴洋洋老师指导.mp4" type="video/mp4" />
+            </video>
+            <p class="video-caption">吴洋洋 · 老师指导</p>
+          </div>
+          <div class="video-card">
+            <video controls preload="metadata">
+              <source src="张美娣工作日常.mp4" type="video/mp4" />
+            </video>
+            <p class="video-caption">张美娣 · 工作日常</p>
+          </div>
+          <div class="video-card">
+            <video controls preload="metadata">
+              <source src="张美娣办公大楼.mp4" type="video/mp4" />
+            </video>
+            <p class="video-caption">张美娣 · 办公大楼</p>
+          </div>
+          <div class="video-card">
+            <video controls preload="metadata">
+              <source src="张美娣工作环境.mp4" type="video/mp4" />
+            </video>
+            <p class="video-caption">张美娣 · 工作环境</p>
+          </div>
         </div>
       </div>
     </section>
@@ -595,10 +737,11 @@
                   卓越新闻学实验班是在普通新闻学专业基础上的强化培养项目，具有以下特点：
                 </p>
                 <ul class="list-disc pl-5 mt-2 space-y-1">
-                  <li>小班化教学，师生互动更加密切</li>
-                  <li>定制化课程体系，理论与实践并重</li>
-                  <li>更多行业资源对接，包括媒体实习、行业导师等</li>
-                  <li>更多创新创业支持和国际交流机会</li>
+                  <li>小班化培养，每届仅选拔15人，学业导师与业界导师双重指导</li>
+                  <li>可修读上海交通大学智能传播微专业，获交大微专业证书</li>
+                  <li>与中国新闻社、潮新闻等一线媒体建立集体实习通道</li>
+                  <li>可赴加拿大皇家大学交换学习，本硕贯通</li>
+                  <li>一流实验平台支撑，配备AIGC工作站和全媒化虚拟仿真教学平台</li>
                 </ul>
               </div>
             </div>
@@ -670,7 +813,7 @@
               </div>
               <div class="faq-answer">
                 <p>
-                  卓越新闻学实验班采用"统一组织+集体实习"模式，学院与中国新闻社、潮新闻等一线行业机构建立集体实习通道，统一组织、对口安排，在校期间即可积累头部媒体实战经验。无需学生自主寻找实习机会。
+                  卓越新闻学实验班采用"统一组织+定向实习"模式，核心实习项目由中国新闻社、潮新闻等一线行业机构提供集体实习通道，统一组织、对口安排，在校期间即可积累头部媒体实战经验，无需学生自主寻找实习机会。
                 </p>
               </div>
             </div>
@@ -703,7 +846,7 @@
                   1.保研名额：卓越新闻学实验班设有1个保研名额，具体评选标准将结合学业成绩、科研能力、实践表现等综合评定，按学校相关政策执行。
                 </p>
                 <p>
-                  2.留学机会：班级为学生提供出国留学深造的渠道，学生可根据个人规划自愿申请，自费攻读国外高校硕士研究生项目，学院将提供留学信息咨询、材料准备指导等支持。
+                  2.留学机会：班级为学生提供赴加拿大皇家大学交换学习的机会，选修课程学分在硕士阶段可申请免修，为"本硕贯通"提供海外通道。学生也可根据个人规划自愿申请自费攻读国外高校硕士研究生项目，学院将提供留学信息咨询、材料准备指导等支持。
                 </p>
               </div>
             </div>
@@ -866,10 +1009,10 @@
           如果你对新闻传媒充满热情，渴望成为一名优秀的新闻传播人才，欢迎加入我们！
         </p>
         <p class="text-lg mb-4">
-          热线咨询电话：13373310687  0931-4512887
+          热线咨询电话：13373310687  0931—4512887
         </p>
-        <p class="text-lg mb-4">联系人：马爽</p>
-        <p class="text-lg mb-8">招生QQ群：752401470</p>
+        <p class="text-lg mb-4">联系人：马爽。</p>
+        <p class="text-lg mb-8">招生QQ群：1104330140</p>
         <a
           href="附件3 西北民族大学卓越新闻学实验班申请表.doc"
           download
@@ -881,7 +1024,7 @@
 
         </div>
         <div class="text-center mt-4 text-sm" style="color: var(--text-color)">
-          制作团队：2022级卓越新闻实验班 陈怡帆、苏得凯、王林焰、郑南兵<br />
+          制作团队：2023级卓越新闻学实验班陈倩倩、2022级卓越新闻实验班 陈怡帆、苏得凯、王林焰、郑南兵<br />
           指导教师：杨志宏、崔永鹏
         </div>
         <div class="text-center mt-3 text-sm" style="color: var(--text-color)">
